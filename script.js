@@ -264,8 +264,8 @@ Savebutton.addEventListener('click', () => {
 
      let xhr=new XMLHttpRequest();
 
-     xhr.open('POST', "https://dummy.restapiexample.com/api/v1/create", true);
-     xhr.getResponseHeader("Content-Type", "application/json");
+     xhr.open('POST', "https://reqres.in/api/users", true);
+     xhr.setRequestHeader("Content-Type", "application/json");
 
      xhr.onprogress=function(){
           console.log('on progress');
