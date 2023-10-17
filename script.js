@@ -256,10 +256,9 @@ function leadandExpectedDDRcount() {
 }
 
 
-let Savebutton = document.querySelector('.Savebutton1');
-Savebutton.addEventListener('click', () => {
+let Savebutton1 = document.querySelector('.Savebutton1');
+Savebutton1.addEventListener('click', () => {
      leadandExpectedDDRcount();
-     console.log(AllValues);
 
 
      let xhr=new XMLHttpRequest();
@@ -275,7 +274,118 @@ Savebutton.addEventListener('click', () => {
           console.log(this.responseText);
      }
 
-     param=JSON.stringify(AllValues);
+     params=JSON.stringify(AllValues.row1);
 
-     xhr.send(param);
+     xhr.send(params);
+})
+
+let Savebutton2 = document.querySelector('.Savebutton2');
+Savebutton2.addEventListener('click', () => {
+     leadandExpectedDDRcount();
+
+     let xhr=new XMLHttpRequest();
+
+     xhr.open('POST', "https://reqres.in/api/users", true);
+     xhr.setRequestHeader("Content-Type", "application/json");
+
+     xhr.onprogress=function(){
+          console.log('on progress');
+     }
+
+     xhr.onload=function(){
+          console.log(this.responseText);
+     }
+
+     params=JSON.stringify(AllValues.row2);
+
+     xhr.send(params);
+})
+
+let Savebutton3 = document.querySelector('.Savebutton3');
+Savebutton3.addEventListener('click', () => {
+     leadandExpectedDDRcount();
+
+     let xhr=new XMLHttpRequest();
+
+     xhr.open('POST', "https://reqres.in/api/users", true);
+     xhr.setRequestHeader("Content-Type", "application/json");
+
+     xhr.onprogress=function(){
+          console.log('on progress');
+     }
+
+     xhr.onload=function(){
+          console.log(this.responseText);
+     }
+
+     params=JSON.stringify(AllValues.row3);
+
+     xhr.send(params);
+})
+
+let Savebutton4 = document.querySelector('.Savebutton4');
+Savebutton4.addEventListener('click', () => {
+     leadandExpectedDDRcount();
+
+     let xhr=new XMLHttpRequest();
+
+     xhr.open('POST', "https://reqres.in/api/users", true);
+     xhr.setRequestHeader("Content-Type", "application/json");
+
+     xhr.onprogress=function(){
+          console.log('on progress');
+     }
+
+     xhr.onload=function(){
+          console.log(this.responseText);
+     }
+
+     params=JSON.stringify(AllValues.row4);
+
+     xhr.send(params);
+})
+
+let Savebutton5 = document.querySelector('.Savebutton5');
+Savebutton5.addEventListener('click', () => {
+     leadandExpectedDDRcount();
+
+     let xhr=new XMLHttpRequest();
+
+     xhr.open('POST', "https://reqres.in/api/users", true);
+     xhr.setRequestHeader("Content-Type", "application/json");
+
+     xhr.onprogress=function(){
+          console.log('on progress');
+     }
+
+     xhr.onload=function(){
+          console.log(this.responseText);
+     }
+
+     params=JSON.stringify(AllValues.row5);
+
+     xhr.send(params);
+})
+
+let Savebutton6 = document.querySelector('.Savebutton6');
+Savebutton6.addEventListener('click', () => {
+     leadandExpectedDDRcount();
+
+
+     let xhr=new XMLHttpRequest();
+
+     xhr.open('POST', "https://reqres.in/api/users", true);
+     xhr.setRequestHeader("Content-Type", "application/json");
+
+     xhr.onprogress=function(){
+          console.log('on progress');
+     }
+
+     xhr.onload=function(){
+          console.log(this.responseText);
+     }
+
+     params=JSON.stringify(AllValues.row6);
+
+     xhr.send(params);
 })
