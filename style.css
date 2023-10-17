@@ -1,0 +1,74 @@
+*{
+     margin: 0;
+     padding: 0;
+}
+
+table, th, td, tr{
+     border: 1px solid rgba(128, 128, 128, 0.374);
+     border-collapse: collapse;
+     text-align: center;
+     height: 70px;
+     width: 30px;
+     font-size: large;
+     font-size: 1rem;
+     word-wrap: break-word;
+}
+
+table{
+     height: 100%;
+     width: 100%;
+}
+
+button{
+     display: block;
+}
+
+.save-button{
+     height: 40%;
+     width: 60%;
+     background-color: green;
+     color: white;
+     border: none;
+     font-size: 100%;
+}
+.cancel-button{
+     height: 40%;
+     width: 80%;
+     background-color: red;
+     color: white;
+     border: none;
+     text-align: left;
+     padding-left: 6%;
+     font-size: 100%;
+}
+
+i{
+     padding-right: 2%;
+     font-size: 90%;
+}
+
+input{
+     height: 40%;
+     width: 70%;
+     border: none;
+}
+
+@media screen and (max-width: 1250px) {
+     .save-button{
+          font-size: 70%;
+     }
+     .cancel-button{
+          font-size: 70%;
+     }
+   }
+
+@media screen and (max-width: 660px) {
+     /* tr{
+          display: flex;
+          flex-direction: row;
+     } */
+   }
+
+.input-div{
+     width: 100%;
+}

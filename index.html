@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Tabel</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+     <table>
+          <tr>
+               <th>Action</th>
+               <th>Id</th>
+               <th>Start Date</th>
+               <th>End Date</th>
+               <th>Month,Year</th>
+               <th>Dates Excluded</th>
+               <th>Number of days</th>
+               <th>Lead Count</th>
+               <th>Expected DDR</th>
+               <th>Last Update</th>
+          </tr>
+          <tr>
+               <td>N/A</td>
+               <td>N/A</td>
+               <td><input type="date" class="Start_date1" onchange="startValues1()" name="Start-Date"></td>
+               <td><input type="date" class="End_date1" onchange="EndValue1()" name="End-Date"></td>
+               <td class="Month-year1">10</td>
+               <td class="dateExclutedInputes1"><input type="date" class="Date_Excluded1" onchange="ShowValue1();" name="Date-Excluded"></td>
+               <td class="date-output1">1</td>
+               <td><input type="text" class="Lead_Count1" name="Lead-Count" placeholder="0"></td>
+               <td><input type="text" class="Expected_DDR1" name="Expected-DDR" placeholder="0"></td>
+               <td><button class="save-button Savebutton1">Save</button><button class="cancel-button Cancelbutton1"><i
+                              class="fa-solid fa-ban"></i>Cancel</button></td>
+          </tr>
+          <tr>
+               <td>N/A</td>
+               <td>11</td>
+               <td><input type="date" class="Start_date2" onchange="startValues2()" name="Start-Date"></td>
+               <td><input type="date" class="End_date2" onchange="EndValue2()" name="End-Date"></td>
+               <td class="Month-year2">10</td>
+               <td class="dateExclutedInputes2"><input type="date" class="Date_Excluded2" onchange="ShowValue2();" name="Date-Excluded"></td>
+               <td class="date-output2">1</td>
+               <td><input type="text" class="Lead_Count2" name="Lead-Count" placeholder="0"></td>
+               <td><input type="text" class="Expected_DDR2" name="Expected-DDR" placeholder="0"></td>
+               <td><button class="save-button Savebutton2">Save</button><button class="cancel-button Cancelbutton2"><i
+                              class="fa-solid fa-ban"></i>Cancel</button></td>
+          </tr>
+          <tr>
+               <td>N/A</td>
+               <td>N/A</td>
+               <td><input type="date" class="Start_date3" onchange="startValues3()" name="Start-Date"></td>
+               <td><input type="date" class="End_date3" onchange="EndValue3()" name="End-Date"></td>
+               <td class="Month-year3">10</td>
+               <td class="dateExclutedInputes3"><input type="date" class="Date_Excluded3" onchange="ShowValue3();" name="Date-Excluded"></td>
+               <td class="date-output3">1</td>
+               <td><input type="text" class="Lead_Count3" name="Lead-Count" placeholder="0"></td>
+               <td><input type="text" class="Expected_DDR3" name="Expected-DDR" placeholder="0"></td>
+               <td><button class="save-button Savebutton3">Save</button><button class="cancel-button Cancelbutton3"><i
+                              class="fa-solid fa-ban"></i>Cancel</button></td>
+          </tr>
+          <tr>
+               <td>N/A</td>
+               <td>11</td>
+               <td><input type="date" class="Start_date4" onchange="startValues4()" name="Start-Date"></td>
+               <td><input type="date" class="End_date4" onchange="EndValue4()" name="End-Date"></td>
+               <td class="Month-year4">10</td>
+               <td class="dateExclutedInputes4"><input type="date" class="Date_Excluded4" onchange="ShowValue4();" name="Date-Excluded"></td>
+               <td class="date-output4">1</td>
+               <td><input type="text" class="Lead_Count4" name="Lead-Count" placeholder="0"></td>
+               <td><input type="text" class="Expected_DDR4" name="Expected-DDR" placeholder="0"></td>
+               <td><button class="save-button Savebutton4">Save</button><button class="cancel-button Cancelbutton4"><i
+                              class="fa-solid fa-ban"></i>Cancel</button></td>
+          </tr>
+          <tr>
+               <td>N/A</td>
+               <td>11</td>
+               <td><input type="date" class="Start_date5" onchange="startValues5()" name="Start-Date"></td>
+               <td><input type="date" class="End_date5" onchange="EndValue5()" name="End-Date"></td>
+               <td class="Month-year5">10</td>
+               <td class="dateExclutedInputes5"><input type="date" class="Date_Excluded5" onchange="ShowValue5();" name="Date-Excluded"></td>
+               <td class="date-output5">1</td>
+               <td><input type="text" class="Lead_Count5" name="Lead-Count" placeholder="0"></td>
+               <td><input type="text" class="Expected_DDR5" name="Expected-DDR" placeholder="0"></td>
+               <td><button class="save-button Savebutton5">Save</button><button class="cancel-button Cancelbutton5"><i
+                              class="fa-solid fa-ban"></i>Cancel</button></td>
+          </tr>
+          <tr>
+               <td>N/A</td>
+               <td>11</td>
+               <td><input type="date" class="Start_date6" onchange="startValues6()" name="Start-Date"></td>
+               <td><input type="date" class="End_date6" onchange="EndValue6()" name="End-Date"></td>
+               <td class="Month-year6">10</td>
+               <td class="dateExclutedInputes6"><input type="date" class="Date_Excluded6" onchange="ShowValue6();" name="Date-Excluded"></td>
+               <td class="date-output6">1</td>
+               <td><input type="text" class="Lead_Count6" name="Lead-Count" placeholder="0"></td>
+               <td><input type="text" class="Expected_DDR6" name="Expected-DDR" placeholder="0"></td>
+               <td><button class="save-button Savebutton6">Save</button><button class="cancel-button Cancelbutton6"><i
+                              class="fa-solid fa-ban"></i>Cancel</button></td>
+          </tr>
+     </table>
+     <script src="script.js"></script>
+</body>
+
+</html>
