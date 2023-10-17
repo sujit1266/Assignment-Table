@@ -1,5 +1,3 @@
-// import AllValues from "./data/values.js";
-
 let AllValues = {
      row1: {
           Start_date1: "",
@@ -64,6 +62,7 @@ let AllValues = {
 
 function startValues1() {
      const StartDate_value = document.querySelector('.Start_date1').value;
+     document.querySelector('.Date_Excluded1').setAttribute('min', StartDate_value);
      document.querySelector('.Month-year1').innerHTML = `<p>${StartDate_value.slice(5, 7)}, ${StartDate_value.slice(0, 4)}</p>`;
      AllValues.row1.Start_date1 = StartDate_value;
 }
@@ -72,66 +71,77 @@ function startValues1() {
 
 function EndValue1() {
      const EndDate_value1 = document.querySelector('.End_date1').value;
+     document.querySelector('.Date_Excluded1').setAttribute('max', EndDate_value1);
      AllValues.row1.End_date1 = EndDate_value1;
 }
 
 
 
 function startValues2() {
-     const StartDate_value = document.querySelector('.Start_date2').value;
-     document.querySelector('.Month-year2').innerHTML = `<p>${StartDate_value.slice(5, 7)}, ${StartDate_value.slice(0, 4)}</p>`;
-     AllValues.row2.Start_date2 = StartDate_value;
+     const StartDate_value2 = document.querySelector('.Start_date2').value;
+     document.querySelector('.Date_Excluded2').setAttribute('min', StartDate_value2);
+     document.querySelector('.Month-year2').innerHTML = `<p>${StartDate_value2.slice(5, 7)}, ${StartDate_value.slice(0, 4)}</p>`;
+     AllValues.row2.Start_date2 = StartDate_value2;
 }
 
 function EndValue2() {
-     const EndDate_value2 = document.querySelector('.End_date1').value;
-     AllValues.row2.End_date2 = EndDate_value2;
+     const EndDate_value = document.querySelector('.End_date2').value;
+     document.querySelector('.Date_Excluded2').setAttribute('max', EndDate_value);
+     AllValues.row2.End_date2 = EndDate_value;
 }
 
 
 function startValues3() {
      const StartDate_value = document.querySelector('.Start_date3').value;
+     document.querySelector('.Date_Excluded3').setAttribute('min', StartDate_value);
      document.querySelector('.Month-year3').innerHTML = `<p>${StartDate_value.slice(5, 7)}, ${StartDate_value.slice(0, 4)}</p>`;
      AllValues.row3.Start_date3 = StartDate_value;
 }
 function EndValue3() {
-     const EndDate_value3 = document.querySelector('.End_date1').value;
+     const EndDate_value3 = document.querySelector('.End_date3').value;
+     document.querySelector('.Date_Excluded3').setAttribute('max', EndDate_value3);
      AllValues.row3.End_date3 = EndDate_value3;
 }
 
 
 function startValues4() {
      const StartDate_value = document.querySelector('.Start_date4').value;
+     document.querySelector('.Date_Excluded4').setAttribute('min', StartDate_value);
      document.querySelector('.Month-year4').innerHTML = `<p>${StartDate_value.slice(5, 7)}, ${StartDate_value.slice(0, 4)}</p>`;
      AllValues.row4.Start_date4 = StartDate_value;
 }
 
 function EndValue4() {
-     const EndDate_value4 = document.querySelector('.End_date1').value;
+     const EndDate_value4 = document.querySelector('.End_date4').value;
+     document.querySelector('.Date_Excluded4').setAttribute('max', EndDate_value4);
      AllValues.row4.End_date4 = EndDate_value4;
 }
 
 
 function startValues5() {
      const StartDate_value = document.querySelector('.Start_date5').value;
+     document.querySelector('.Date_Excluded5').setAttribute('min', StartDate_value);
      document.querySelector('.Month-year5').innerHTML = `<p>${StartDate_value.slice(5, 7)}, ${StartDate_value.slice(0, 4)}</p>`;
      AllValues.row5.Start_date5 = StartDate_value;
 }
 
 function EndValue5() {
-     const EndDate_value5 = document.querySelector('.End_date1').value;
+     const EndDate_value5 = document.querySelector('.End_date5').value;
+     document.querySelector('.Date_Excluded5').setAttribute('max', EndDate_value5);
      AllValues.row5.End_date5 = EndDate_value5;
 }
 
 
 function startValues6() {
      const StartDate_value = document.querySelector('.Start_date6').value;
+     document.querySelector('.Date_Excluded6').setAttribute('min', StartDate_value);
      document.querySelector('.Month-year6').innerHTML = `<p>${StartDate_value.slice(5, 7)}, ${StartDate_value.slice(0, 4)}</p>`;
      AllValues.row6.Start_date6 = StartDate_value;
 }
 
 function EndValue6() {
-     const EndDate_value6 = document.querySelector('.End_date1').value;
+     const EndDate_value6 = document.querySelector('.End_date6').value;
+     document.querySelector('.Date_Excluded6').setAttribute('max', EndDate_value6);
      AllValues.row6.End_date6 = EndDate_value6;
 }
 // keyinput=document.querySelector('');
@@ -218,7 +228,7 @@ function ShowValue6() {
      let ListofDates6 = '<div class="input-div"><input type="date" class="Date_Excluded6" onchange="ShowValue6();" name="Date-Excluded"></div>';
      dateValue6 = document.querySelector('.Date_Excluded6').value;
      dateExclutedValues6.push(dateValue6);
-     AllValues.row6.dateExclutedInputes6.push(dateExclutedValues6[i]);
+     AllValues.row6.dateExclutedInputes6.push(dateValue6);
      for (let i = 0; i < dateExclutedValues6.length; i++) {
           const html = `${dateExclutedValues6[i]}, `;
           ListofDates6 += html;
